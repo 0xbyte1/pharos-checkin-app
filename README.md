@@ -4,7 +4,7 @@
 
 A decentralized daily check-in application built on **Pharos Testnet**. Connect your wallet, check in every day, and track your progress on-chain!
 
-![Pharos Check-in](./public/preview.svg)
+![Pharos Daily Check-in](./public/screenshot.png)
 
 ## ✨ Features
 
