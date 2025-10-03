@@ -147,7 +147,7 @@ This is a testnet application for educational purposes. Always verify transactio
 
 ## 🔗 Links
 
-- **Live App:** [Your Vercel URL]
+- **Live App:** [[Your Vercel URL\]](https://pharos-checkin-app-zuln.vercel.app/)
 - **Contract Explorer:** [View on Pharosscan](https://testnet.pharosscan.xyz/address/0x94bc90f31bf2422e0cabf0ab95f18a79b1770e11)
 - **Documentation:** [DEPLOYMENT.md](./DEPLOYMENT.md)
 
