@@ -3,47 +3,47 @@ pragma solidity ^0.8.20;
 
 /**
  * @title DailyCheckIn
- * @dev Basit bir daily check-in contract'ı
- * Kullanıcılar her gün check-in yapabilir ve toplam check-in sayıları kaydedilir
+ * @dev A simple daily check-in contract
+ * Users can check in daily and their total check-in count is recorded
  */
 contract DailyCheckIn {
-    // Kullanıcı adresi => toplam check-in sayısı
+    // User address => total check-in count
     mapping(address => uint256) public checkInCounts;
     
-    // Kullanıcı adresi => son check-in zamanı
+    // User address => last check-in time
     mapping(address => uint256) public lastCheckInTime;
     
-    // Event: check-in yapıldığında emit edilir
+    // Event: emitted when a check-in is made
     event CheckedIn(address indexed user, uint256 count, uint256 timestamp);
     
     /**
-     * @dev Check-in fonksiyonu
-     * Kullanıcı bu fonksiyonu çağırarak check-in yapar
+     * @dev Check-in function
+     * Users call this function to perform a check-in
      */
     function checkIn() external {
-        // Check-in sayısını artır
+        // Increment check-in count
         checkInCounts[msg.sender]++;
         
-        // Son check-in zamanını güncelle
+        // Update last check-in time
         lastCheckInTime[msg.sender] = block.timestamp;
         
-        // Event emit et
+        // Emit event
         emit CheckedIn(msg.sender, checkInCounts[msg.sender], block.timestamp);
     }
     
     /**
-     * @dev Belirli bir kullanıcının check-in sayısını döndürür
-     * @param user Kullanıcı adresi
-     * @return Toplam check-in sayısı
+     * @dev Returns the check-in count for a specific user
+     * @param user User address
+     * @return Total check-in count
      */
     function getCheckInCount(address user) external view returns (uint256) {
         return checkInCounts[user];
     }
     
     /**
-     * @dev Belirli bir kullanıcının son check-in zamanını döndürür
-     * @param user Kullanıcı adresi
-     * @return Son check-in timestamp'i
+     * @dev Returns the last check-in time for a specific user
+     * @param user User address
+     * @return Last check-in timestamp
      */
     function getLastCheckInTime(address user) external view returns (uint256) {
         return lastCheckInTime[user];

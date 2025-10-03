@@ -1,103 +1,103 @@
-# 📊 Proje Özeti
+# 📊 Project Summary
 
 ## 🎯 Pharos Daily Check-in dApp
 
-Bu proje, Pharos Testnet üzerinde çalışan tam fonksiyonel bir Web3 uygulamasıdır.
+A fully functional Web3 application running on Pharos Testnet.
 
-## ✅ Tamamlanan Özellikler
+## ✅ Completed Features
 
 ### Frontend (Next.js 14 + TypeScript)
-- ✅ Modern React 18 ve Next.js 14 App Router
-- ✅ TypeScript ile tip güvenli kod
-- ✅ Tailwind CSS ile responsive tasarım
-- ✅ Dark mode desteği
-- ✅ MetaMask entegrasyonu
-- ✅ Ethers.js v6 ile blockchain etkileşimi
-- ✅ Otomatik ağ ekleme ve geçiş
-- ✅ Real-time check-in sayacı
-- ✅ Transaction hash gösterimi
-- ✅ Hata yönetimi ve loading states
+- ✅ Modern React 18 and Next.js 14 App Router
+- ✅ Type-safe code with TypeScript
+- ✅ Responsive design with Tailwind CSS
+- ✅ Dark mode support
+- ✅ MetaMask integration
+- ✅ Blockchain interaction with Ethers.js v6
+- ✅ Automatic network addition and switching
+- ✅ Real-time check-in counter
+- ✅ Transaction hash display
+- ✅ Error handling and loading states
 
 ### Smart Contract (Solidity)
-- ✅ Basit ve güvenli DailyCheckIn contract'ı
-- ✅ Gas optimize edilmiş kod
+- ✅ Simple and secure DailyCheckIn contract
+- ✅ Gas-optimized code
 - ✅ Event logging
-- ✅ View fonksiyonlar
-- ✅ Mapping tabanlı veri saklama
+- ✅ View functions
+- ✅ Mapping-based data storage
 
 ### DevOps & Deployment
-- ✅ Vercel deploy yapılandırması
-- ✅ Environment variables yönetimi
-- ✅ Git ignore ayarları
-- ✅ TypeScript konfigürasyonu
-- ✅ Tailwind ve PostCSS setup
+- ✅ Vercel deployment configuration
+- ✅ Environment variables management
+- ✅ Git ignore settings
+- ✅ TypeScript configuration
+- ✅ Tailwind and PostCSS setup
 
-### Dokümantasyon
-- ✅ Detaylı README.md
-- ✅ Hızlı başlangıç kılavuzu (QUICKSTART.md)
-- ✅ Deploy talimatları (DEPLOY.md)
-- ✅ Proje özeti (PROJECT_SUMMARY.md)
-- ✅ MIT Lisans
+### Documentation
+- ✅ Detailed README.md
+- ✅ Quick start guide (QUICKSTART.md)
+- ✅ Deployment instructions (DEPLOY.md)
+- ✅ Project summary (PROJECT_SUMMARY.md)
+- ✅ MIT License
 
-## 📁 Dosya Yapısı
+## 📁 File Structure
 
 ```
 pharos-checkin-app/
 ├── app/                      # Next.js App Router
-│   ├── globals.css          # Global stiller + Tailwind
+│   ├── globals.css          # Global styles + Tailwind
 │   ├── layout.tsx           # Root layout
-│   └── page.tsx             # Ana sayfa (Check-in UI)
+│   └── page.tsx             # Main page (Check-in UI)
 ├── contracts/               # Smart contracts
-│   └── DailyCheckIn.sol    # Ana contract
+│   └── DailyCheckIn.sol    # Main contract
 ├── types/                   # TypeScript type definitions
-│   └── ethereum.ts         # Ethereum tipleri
-├── public/                  # Static dosyalar
-│   └── preview.svg         # Önizleme görseli
+│   └── ethereum.ts         # Ethereum types
+├── public/                  # Static files
+│   └── preview.svg         # Preview image
 ├── .env.local              # Local environment variables
 ├── .env.example            # Environment template
-├── .gitignore              # Git ignore kuralları
-├── DEPLOY.md               # Deploy talimatları
+├── .gitignore              # Git ignore rules
+├── DEPLOY.md               # Deployment instructions
 ├── LICENSE                 # MIT License
 ├── next.config.js          # Next.js config
 ├── package.json            # Dependencies
 ├── postcss.config.mjs      # PostCSS config
-├── QUICKSTART.md           # Hızlı başlangıç
-├── README.md               # Ana dokümantasyon
+├── QUICKSTART.md           # Quick start guide
+├── README.md               # Main documentation
 ├── tailwind.config.js      # Tailwind config
 ├── tsconfig.json           # TypeScript config
-└── vercel.json             # Vercel deploy config
+└── vercel.json             # Vercel deployment config
 ```
 
-## 🚀 Kurulum Adımları
+## 🚀 Setup Steps
 
-### 1. Bağımlılıkları Yükle
+### 1. Install Dependencies
 ```bash
 npm install
 ```
 
-### 2. Environment Variables Ayarla
-`.env.local` dosyasını düzenle:
+### 2. Configure Environment Variables
+Edit `.env.local` file:
 - NEXT_PUBLIC_PHAROS_RPC_URL
 - NEXT_PUBLIC_CHAIN_ID
-- NEXT_PUBLIC_CONTRACT_ADDRESS (deploy sonrası)
+- NEXT_PUBLIC_CONTRACT_ADDRESS (after deployment)
 
-### 3. Contract'ı Deploy Et
-- Remix IDE kullan veya Hardhat ile deploy et
-- Contract adresini .env.local'e ekle
+### 3. Deploy Contract
+- Use Remix IDE or deploy with Hardhat
+- Add contract address to .env.local
 
-### 4. Development Server Başlat
+### 4. Start Development Server
 ```bash
 npm run dev
 ```
 
-### 5. Test Et
-- http://localhost:3000 aç
-- MetaMask bağla
-- Check-in yap!
+### 5. Test
+- Open http://localhost:3000
+- Connect MetaMask
+- Make your first check-in!
 
-## 🔧 Teknoloji Stack
+## 🔧 Technology Stack
 
-| Kategori | Teknoloji |
+| Category | Technology |
 |----------|-----------|
 | Frontend Framework | Next.js 14 |
 | Language | TypeScript |
@@ -109,50 +109,50 @@ npm run dev
 
 ## 🌐 Pharos Testnet
 
-Bu uygulama Pharos Testnet üzerinde çalışacak şekilde yapılandırılmıştır:
-- Otomatik ağ ekleme
-- Custom RPC URL desteği
-- Chain ID yapılandırması
+This application is configured to work on Pharos Testnet:
+- Automatic network addition
+- Custom RPC URL support
+- Chain ID configuration
 
-## 📝 Önemli Notlar
+## 📝 Important Notes
 
-1. **Security:** Private key'lerinizi asla paylaşmayın veya Git'e commit etmeyin
-2. **Environment:** `.env.local` dosyası Git'e dahil edilmemiştir
-3. **Testnet:** Bu uygulama yalnızca testnet için geliştirilmiştir
-4. **Production:** Production kullanımı için ek güvenlik önlemleri gereklidir
+1. **Security:** Never share your private keys or commit them to Git
+2. **Environment:** `.env.local` file is not included in Git
+3. **Testnet:** This application is developed for testnet only
+4. **Production:** Additional security measures required for production use
 
-## 🎨 UI/UX Özellikleri
+## 🎨 UI/UX Features
 
-- Gradient arka plan
-- Glassmorphism card tasarımı
-- Smooth animasyonlar ve hover efektleri
-- Responsive tasarım (mobil uyumlu)
-- Dark mode desteği
+- Gradient background
+- Glassmorphism card design
+- Smooth animations and hover effects
+- Responsive design (mobile-friendly)
+- Dark mode support
 - Loading states
 - Error handling
 - Success notifications
 
-## 🔜 Geliştirme Fikirleri
+## 🔜 Development Ideas
 
-Projeyi daha da geliştirebilirsiniz:
-- [ ] Daily check-in limiti (günde 1 kez)
-- [ ] Streak sistemi (ardışık günler)
-- [ ] Leaderboard (en çok check-in yapanlar)
-- [ ] NFT ödülleri
+You can further enhance the project:
+- [ ] Daily check-in limit (once per day)
+- [ ] Streak system (consecutive days)
+- [ ] Leaderboard (top check-ins)
+- [ ] NFT rewards
 - [ ] Push notifications
-- [ ] Multi-chain desteği
-- [ ] Database entegrasyonu
-- [ ] Admin paneli
+- [ ] Multi-chain support
+- [ ] Database integration
+- [ ] Admin panel
 
-## 📞 Destek
+## 📞 Support
 
-Sorularınız için:
-1. README.md dosyasını okuyun
-2. QUICKSTART.md ile hızlı başlayın
-3. DEPLOY.md'den deploy detaylarını öğrenin
+For questions:
+1. Read README.md
+2. Quick start with QUICKSTART.md
+3. Learn deployment details from DEPLOY.md
 
-## 🎉 Başarıyla Tamamlandı!
+## 🎉 Successfully Completed!
 
-Projeniz kullanıma hazır! Local olarak çalıştırabilir ve Vercel'e deploy edebilirsiniz.
+Your project is ready to use! You can run it locally and deploy to Vercel.
 
 Happy coding! 🚀

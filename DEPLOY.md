@@ -1,13 +1,13 @@
-# Hardhat kullanarak deploy etmek için (opsiyonel)
+# Deploy with Hardhat (Optional)
 
-## Kurulum
+## Installation
 
 ```bash
 npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
 npx hardhat init
 ```
 
-## hardhat.config.ts oluşturun:
+## Create hardhat.config.ts:
 
 ```typescript
 import { HardhatUserConfig } from "hardhat/config";
@@ -22,7 +22,7 @@ const config: HardhatUserConfig = {
     pharos: {
       url: process.env.NEXT_PUBLIC_PHAROS_RPC_URL || "",
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
-      chainId: parseInt(process.env.NEXT_PUBLIC_CHAIN_ID || "1337"),
+      chainId: parseInt(process.env.NEXT_PUBLIC_CHAIN_ID || "688688"),
     },
   },
 };
@@ -30,7 +30,7 @@ const config: HardhatUserConfig = {
 export default config;
 ```
 
-## Deploy script oluşturun (scripts/deploy.ts):
+## Create deploy script (scripts/deploy.ts):
 
 ```typescript
 import { ethers } from "hardhat";
@@ -57,21 +57,21 @@ main()
   });
 ```
 
-## .env.local dosyasına private key ekleyin:
+## Add private key to .env.local:
 
 ```
 PRIVATE_KEY=your_private_key_here
 ```
 
-⚠️ **UYARI:** Private key'inizi asla Git'e commit etmeyin!
+⚠️ **WARNING:** Never commit your private key to Git!
 
-## Deploy edin:
+## Deploy:
 
 ```bash
 npx hardhat run scripts/deploy.ts --network pharos
 ```
 
-## Contract'ı doğrulayın (block explorer varsa):
+## Verify contract (if block explorer supports it):
 
 ```bash
 npx hardhat verify --network pharos DEPLOYED_CONTRACT_ADDRESS
