@@ -154,7 +154,7 @@ This is a testnet application for educational purposes. Always verify transactio
 ## 🌟 Show Your Support
 
 Give a ⭐️ if this project helped you!
-
+.
 ---
 
 **Built with ❤️ for the Pharos Community**
