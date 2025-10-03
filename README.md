@@ -18,7 +18,7 @@ A decentralized daily check-in application built on **Pharos Testnet**. Connect 
 
 ## 🌐 Live Demo
 
-**[View Live App →](https://your-app-url.vercel.app)**
+**[View Live App →](https://pharos-checkin-app-zuln.vercel.app/)**
 
 **Contract Address:** [`0x94bc90f31bf2422e0cabf0ab95f18a79b1770e11`](https://testnet.pharosscan.xyz/address/0x94bc90f31bf2422e0cabf0ab95f18a79b1770e11)
 
@@ -28,7 +28,7 @@ A decentralized daily check-in application built on **Pharos Testnet**. Connect 
 
 - Node.js 18 or higher
 - MetaMask browser extension
-- Pharos Testnet tokens ([Get from faucet](#))
+- Pharos Testnet tokens ([https://testnet.pharosnetwork.xyz/](#))
 
 ### Installation
 
